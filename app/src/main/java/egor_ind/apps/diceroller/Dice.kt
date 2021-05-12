@@ -1,4 +1,4 @@
-package egor_ind.apps.diceroller
+ package egor_ind.apps.diceroller
 
 class Dice(private val sides: Int) {
 
