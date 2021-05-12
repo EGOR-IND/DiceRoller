@@ -8,7 +8,7 @@ import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var diceImg: ImageView
+    private lateinit var diceImg: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun diceRoll() {
         val mainDice = Dice(6)
-        var toastText = when (mainDice.diceRollValue()) {
+        val toastText = when (mainDice.diceRollValue()) {
             1 -> {
                 diceImg.setImageResource(R.drawable.dice_1)
                 "You rolled 1!"
